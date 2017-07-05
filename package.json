@@ -1,0 +1,21 @@
+{
+  "name": "News",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "cheerio": "^1.0.0-rc.2",
+    "consolidate": "^0.14.5",
+    "express": "^4.15.3",
+    "handlebars": "^4.0.10",
+    "normalize.css": "^7.0.0",
+    "request": "^2.81.0"
+  }
+}

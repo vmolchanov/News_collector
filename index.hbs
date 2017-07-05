@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>News</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="search-container">
+        <div class="search-container__wrap clearfix">
+            <div class="search-container__form">
+                <form action="http://localhost:8080/news" class="search-form" method="get">
+                    <select id="sites-select" class="search-form__sites-select" name="site">
+                        <option name="yandex" value="yandex">Яндекс</option>
+                        <option name="main" value="mail">Mail.ru</option>
+                    </select>
+                    <button class="search-form__show-btn">Найти</button>
+                </form>
+            </div>
+
+            {{#if news}}
+            <div class="search-container__news">
+                <div class="news">
+                    {{#each news}}
+                    <div class="news__item">
+                        <h2>{{this.title}}</h2>
+                        <p>{{this.content}}</p>
+                    </div>
+                    {{/each}}
+                </div>
+            </div>
+            {{/if}}
+        </div>
+    </div>
+</body>
+</html>
